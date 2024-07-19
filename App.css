@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "Dosis", sans-serif;
+    background-color: #b4fbfa;
+    background-image: url('https://i.imghippo.com/files/0cZa41721338370.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.quizTitle {
+    text-align: center;
+    color: white;
+
+}
+
+.quizInfo {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px; */
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.askClue {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid #000; */
+    overflow: auto;
+}
+
+.answerSection {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-family: "Dosis", sans-serif;
+    
+}
+
+#popupDialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px
+        rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    visibility: hidden;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+
+#resultDialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px
+        rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    visibility: hidden;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+
+.nextButton {
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 90px; */
+    height: 100px;
+}
+
+.nextButton:hover {
+    background-color: #906CF4; /* Change color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.title-screen {
+    background-image: url('https://i.imghippo.com/files/lwwj81721408541.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.title-screen button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.title-screen button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Opaque white on hover */
+}
